@@ -54,11 +54,30 @@
 | **Extremes** | Highest LFP: Madagascar (83%), Lowest: Afghanistan (5%) |
 
 ## 5. How to Run
+bash
+pip install pandas pandas-datareader numpy matplotlib seaborn
+jupyter notebook Women_Work_Wealth_Analysis.ipynb
 
-### Prerequisites
-- Python 3.8+
-- pip package manager
+6. Repository Structure
 
-### Install Dependencies
-```bash
-pip install -r requirements.txt
+text
+├── README.md                           # This file
+├── Women_Work_Wealth_Analysis.ipynb    # Main analysis notebook
+├── requirements.txt                    # Python dependencies
+├── figures/                            # Generated visualizations
+│   ├── fertility_vs_lfp.png
+│   ├── gdp_vs_lfp.png
+│   ├── correlation_matrix.png
+│   ├── lfp_violin.png
+│   ├── time_trends.png
+│   └── gdp_vs_literacy.png
+└── data/                               # (Empty - data fetched via API)
+
+7. Limitations
+
+Correlation ≠ causation: Cannot establish causal relationships
+Data gaps: Some countries missing literacy data (reduced sample to 188 countries)
+Cross-country comparison: Cultural and policy factors not captured
+Recent data: Some indicators have delayed reporting for 2023
+
+8. Demo Video
